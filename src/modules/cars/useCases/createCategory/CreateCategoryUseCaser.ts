@@ -9,8 +9,8 @@ class CreateCategoryUseCaser {
 
     constructor (private categoriesrepository: IcategoryRpository){}
 
-    execute({ name , description }: IRequest ) : void {
-        const categorieAlreadExists = this.categoriesrepository.findBayName(name);
+    execute({ name , description }: IRequest ) :void {
+        const categorieAlreadExists = this.categoriesrepository.findByName(name);
 
         if (categorieAlreadExists){
            throw new Error("Category alread exists"); 

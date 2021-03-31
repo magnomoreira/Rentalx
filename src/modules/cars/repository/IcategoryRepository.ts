@@ -7,7 +7,7 @@ interface IcreateRepositDto {
 }
 
 interface IcategoryRpository {
-    findBayName(name: string): Category;
+    findByName(name: string): Category;
     list(): Category[];
     create({name, description}: IcreateRepositDto):void;
 
