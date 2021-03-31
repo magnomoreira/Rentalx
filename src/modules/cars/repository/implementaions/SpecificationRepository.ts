@@ -1,6 +1,6 @@
-import { Specification } from "../model/Specification";
-import { IcreateRepositDto } from "./IcategoryRepository";
-import { IspecificationRepository } from "./IspecificationRepository";
+import { Specification } from "../../model/Specification";
+import { IcreateRepositDto } from "../IcategoryRepository";
+import { IspecificationRepository } from "../IspecificationRepository";
 
 class SpecificationRepository implements IspecificationRepository {
     private specification : Specification[];

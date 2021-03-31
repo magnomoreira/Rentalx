@@ -1,5 +1,5 @@
-import { Category } from '../model/Category';
-import { IcreateRepositDto } from './IcategoryRepository';
+import { Category } from '../../model/Category';
+import { IcreateRepositDto } from '../IcategoryRepository';
 
 class CategorieRepository {
 
