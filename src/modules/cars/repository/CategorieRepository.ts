@@ -4,10 +4,20 @@ import { IcreateRepositDto } from './IcategoryRepository';
 class CategorieRepository {
 
     private  categories: Category [];
+    private static INSTANCE: CategorieRepository;
 
-    constructor(){
+    private constructor(){
+
         this.categories = [];
     }
+
+    public static getInstance(): CategorieRepository {
+        if (!CategorieRepository.INSTANCE){
+            CategorieRepository.INSTANCE = new CategorieRepository();
+        }
+        return CategorieRepository.INSTANCE;
+    }
+
     create( { name, description}: IcreateRepositDto): void {
 
         const category = new Category()
