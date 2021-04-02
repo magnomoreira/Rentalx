@@ -43,6 +43,30 @@
                         "description":"Category alread exists"
                     }
                 }
+            },
+            "get":{
+                "tags":["Category"],
+                "sumary":"List all categories",
+                "response":{
+                    "200":{
+                        "description":"Success",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "type":"object",
+                                    "properties":{
+                                        "name":{
+                                            "type":"string"
+                                        },
+                                        "descripton":{
+                                            "type":"string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
