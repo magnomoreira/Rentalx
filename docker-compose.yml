@@ -22,7 +22,6 @@ services:
         volumes:
             - .:/user/app
         
-        
 volumes:
     pgdata:
         driver: local
