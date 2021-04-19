@@ -7,9 +7,9 @@ interface IcreateRepositDto {
 }
 
 interface IcategoryRpository {
-    findByName(name: string): Category;
-    list(): Category[];
-    create({name, description}: IcreateRepositDto):void;
+    findByName(name: string): Promise<Category>;
+    list(): Promise<Category[]>;
+    create({name, description}: IcreateRepositDto):Promise<void>;
 
 }
 
