@@ -1,5 +1,5 @@
 
-import { Category } from "../model/Category";
+import { Category } from "../entities/Category";
 
 interface IcreateRepositDto {
     name : string;
